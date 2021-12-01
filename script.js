@@ -10,9 +10,7 @@ document.getElementById("search").addEventListener("click", () => {
 
   fetch(api)
     .then((response) => {
-        console.log(response)
-        console.log(response.json())
-      return response.json();
+        return response.json();
     })
 
     .then((data) => {
