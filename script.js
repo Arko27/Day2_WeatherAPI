@@ -6,7 +6,7 @@ document.getElementById("search").addEventListener("click", () => {
   let tempValue = document.getElementById("temp-value");
   let climate = document.getElementById("climate");
 
-  const api = `https://api.weatherapi.com/v1/current.json?key=126a09e53c244898ad1182436210112&q=${srchLoc}`;
+  const api = `https://api.weatherapi.com/v1/current.json?key=<API_KEY>q=${srchLoc}`;
 
   fetch(api)
     .then((response) => {
